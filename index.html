@@ -1,235 +1,28 @@
-<!DOCTYPE html>
-<html lang="ur-PK">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Refrigeration & Air Conditioning Center</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html { scroll-behavior: smooth; }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<!-- Filter Buttons -->
+<div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="ac">AC Services</button>
+  <button class="filter-btn" data-filter="fridge">Refrigerator</button>
+  <button class="filter-btn" data-filter="washing">Washing Machine</button>
+</div>
 
-    <!-- Top Bar -->
-    <div class="bg-blue-950 text-gray-300 text-xs py-2 px-4 border-b border-blue-900">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex flex-wrap items-center gap-4">
-                <a href="tel:+923406886783" class="flex items-center gap-1 hover:text-cyan-400">
-                    <i class="fa-solid fa-phone text-cyan-400"></i> 0340-6886783
-                </a>
-                <a href="mailto:faizbinhussain@gmail.com" class="flex items-center gap-1 hover:text-cyan-400">
-                    <i class="fa-solid fa-envelope text-cyan-400"></i> faizbinhussain@gmail.com
-                </a>
-                <span class="flex items-center gap-1">
-                    <i class="fa-solid fa-location-dot text-cyan-400"></i> Main National Highway Jamal e Ibrahim Society Quaidabad Karachi
-                </span>
-            </div>
-            <div class="flex items-center space-x-3 space-x-reverse">
-                <a href="https://wa.me/923406886783" target="_blank" class="hover:text-cyan-400"><i class="fa-brands fa-whatsapp text-lg"></i></a>
-            </div>
-        </div>
-    </div>
+<!-- Gallery / Items Container -->
+<div class="gallery-container">
+  <!-- AC Items -->
+  <div class="gallery-item ac">
+    <img src="images/ac1.jpg" alt="AC Repair">
+    <h3>AC Repair & Service</h3>
+  </div>
 
-    <!-- Header / Navbar -->
-    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3 space-x-reverse">
-                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center p-1 shadow">
-                    <span class="text-blue-900 font-extrabold text-xl">A</span>
-                </div>
-                <div>
-                    <h1 class="text-sm md:text-lg font-bold tracking-tight leading-tight">AHMED REFRIGERATION &</h1>
-                    <h2 class="text-xs md:text-sm text-cyan-300 font-semibold">AIR CONDITIONING CENTER</h2>
-                </div>
-            </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#home" class="hover:text-cyan-300 text-cyan-300 border-b-2 border-cyan-300 pb-1">Home</a>
-                <a href="#services" class="hover:text-cyan-300">Services</a>
-                <a href="#about" class="hover:text-cyan-300">About Us</a>
-                <a href="#contact" class="hover:text-cyan-300">Contact Us</a>
-            </nav>
-            <a href="https://wa.me/923406886783?text=Salam%20Ahmed%20Center,%20mujhe%20service%20chahiye" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 transition shadow">
-                <i class="fa-solid fa-phone"></i> Get a Quote
-            </a>
-        </div>
-    </header>
+  <!-- Fridge Items -->
+  <div class="gallery-item fridge">
+    <img src="images/fridge1.jpg" alt="Fridge Repair">
+    <h3>Refrigerator Repair</h3>
+  </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800 text-white py-12 md:py-20 px-4">
-        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div class="lg:col-span-7">
-                <span class="text-cyan-300 text-xs md:text-sm uppercase tracking-wider font-semibold border-l-2 border-cyan-400 pl-2">Your Comfort Our Priority</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-4 leading-tight">
-                    Ahmed Refrigeration & <span class="text-cyan-300">Air Conditioning Center</span>
-                </h2>
-                <p class="text-blue-100 text-base md:text-lg mb-8">
-                    Expert HVAC Repairing, Sale, Purchase and Services. Ghar ya daftar mein behtareen thandak ke liye abhi rabta karein.
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="tel:+923406886783" class="bg-cyan-500 hover:bg-cyan-600 text-blue-950 font-bold px-6 py-3 rounded-lg shadow-lg flex items-center justify-center gap-2 text-base transition">
-                        <i class="fa-solid fa-phone"></i> Call Now 0340-6886783
-                    </a>
-                    <a href="#services" class="bg-blue-800 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg border border-blue-600 flex items-center justify-center gap-2 text-base transition">
-                        Our Services <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Profile Banner Image -->
-            <div class="lg:col-span-5 flex justify-center">
-                <div class="relative bg-gradient-to-b from-blue-800 to-blue-950 p-3 rounded-2xl shadow-2xl border-2 border-cyan-400/40 w-full max-w-md">
-                    <img src="file_000000001fb88211954be1ce012e8772.png" alt="Ahmed Refrigeration Owner" class="rounded-xl w-full h-[380px] object-cover object-top shadow-md">
-                    <div class="absolute bottom-6 right-6 bg-blue-950/90 backdrop-blur text-white px-4 py-2 rounded-lg border border-cyan-400 text-xs shadow">
-                        <p class="font-bold text-cyan-300">Faiz Bin Hussain</p>
-                        <p class="text-[10px] text-gray-300">Expert HVAC Technician</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16 px-4 container mx-auto">
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-blue-900">Hamari Khidmaat (Services)</h3>
-            <p class="text-gray-600 mt-2">Har service par click karke uski specific details aur photo dekhein</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- 1. AC Repairing -->
-            <div onclick="openModal('AC Repairing & Service', 'IMG20261012134013.jpg', 'AC Fitting, Un-installation, Chemical Wash aur Compressor Work.')" class="cursor-pointer bg-white p-6 rounded-xl shadow-md border hover:border-cyan-500 hover:shadow-xl transition text-center group">
-                <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-3xl mx-auto mb-4 group-hover:bg-cyan-500 group-hover:text-white transition">
-                    <i class="fa-solid fa-snowflake"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-blue-900">AC Repairing & Service</h4>
-                <p class="text-gray-600 text-xs mb-4">AC Service ki tasveer dekhein.</p>
-                <span class="text-xs text-cyan-600 font-bold underline">AC Photo Dekhein &rarr;</span>
-            </div>
-
-            <!-- 2. Refrigerator Repairing -->
-            <div onclick="openModal('Refrigerator Repairing', 'IMG20261012134002.jpg', 'Fridge aur Deep Freezer ki Gas Charging, Thermostat aur Repairing.')" class="cursor-pointer bg-white p-6 rounded-xl shadow-md border hover:border-cyan-500 hover:shadow-xl transition text-center group">
-                <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-3xl mx-auto mb-4 group-hover:bg-cyan-500 group-hover:text-white transition">
-                    <i class="fa-solid fa-temperature-arrow-down"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-blue-900">Refrigerator Repairing</h4>
-                <p class="text-gray-600 text-xs mb-4">Fridge Repairing ki tasveer dekhein.</p>
-                <span class="text-xs text-cyan-600 font-bold underline">Fridge Photo Dekhein &rarr;</span>
-            </div>
-
-            <!-- 3. Commercial HVAC -->
-            <div onclick="openModal('Commercial HVAC & Chillers', 'IMG20261012134017.jpg', 'Commercial Chillers, Cold Rooms aur Display Counters ki Maintenance.')" class="cursor-pointer bg-white p-6 rounded-xl shadow-md border hover:border-cyan-500 hover:shadow-xl transition text-center group">
-                <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-3xl mx-auto mb-4 group-hover:bg-cyan-500 group-hover:text-white transition">
-                    <i class="fa-solid fa-building"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-blue-900">Commercial HVAC</h4>
-                <p class="text-gray-600 text-xs mb-4">Commercial Chillers ki tasveer dekhein.</p>
-                <span class="text-xs text-cyan-600 font-bold underline">Commercial Photo Dekhein &rarr;</span>
-            </div>
-
-            <!-- 4. Sale & Purchase -->
-            <div onclick="openModal('Sale & Purchase', 'IMG20261012134047.jpg', 'New aur Used AC Units, Fridges aur Inverter Spare Parts ki Khareed-o-Farookht.')" class="cursor-pointer bg-white p-6 rounded-xl shadow-md border hover:border-cyan-500 hover:shadow-xl transition text-center group">
-                <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-3xl mx-auto mb-4 group-hover:bg-cyan-500 group-hover:text-white transition">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-blue-900">Sale & Purchase</h4>
-                <p class="text-gray-600 text-xs mb-4">Available Units ki tasveer dekhein.</p>
-                <span class="text-xs text-cyan-600 font-bold underline">Stock Photo Dekhein &rarr;</span>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Pop-up Window -->
-    <div id="serviceModal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-lg w-full p-6 relative shadow-2xl">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-black text-2xl font-bold">&times;</button>
-            <h3 id="modalTitle" class="text-xl font-bold text-blue-900 mb-2"></h3>
-            <p id="modalDesc" class="text-gray-600 text-xs mb-4"></p>
-            
-            <div class="rounded-xl overflow-hidden border border-gray-200 mb-4 bg-gray-100 flex justify-center">
-                <img id="modalImg" src="" alt="Service Work" class="w-full max-h-[300px] object-cover">
-            </div>
-
-            <div class="flex gap-3">
-                <a href="https://wa.me/923406886783?text=Salam%20Ahmed%20Center,%20mujhe%20is%20service%20ke%20hawale%20se%20puchna%20hai" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white text-center py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
-                </a>
-                <button onclick="closeModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2.5 rounded-lg font-semibold text-sm">
-                    Close
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 container mx-auto max-w-3xl text-center">
-        <h3 class="text-3xl font-bold text-blue-900 mb-2">Abhi Rabta Karein</h3>
-        <p class="text-gray-600 mb-8">Service book karwane ke liye niche diye gaye buttons par click karein.</p>
-        
-        <div class="bg-white p-8 rounded-2xl shadow-lg border grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <div class="flex items-start gap-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 text-xl shrink-0">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                    <h5 class="font-bold text-sm text-gray-500">Phone Number</h5>
-                    <a href="tel:+923406886783" class="text-lg font-bold text-blue-900 hover:text-cyan-600">0340-6886783</a>
-                </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 text-xl shrink-0">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div>
-                    <h5 class="font-bold text-sm text-gray-500">WhatsApp</h5>
-                    <a href="https://wa.me/923406886783" target="_blank" class="text-lg font-bold text-green-700 hover:underline">0340-6886783</a>
-                </div>
-            </div>
-
-            <div class="flex items-start gap-4 md:col-span-2">
-                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 text-xl shrink-0">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                    <h5 class="font-bold text-sm text-gray-500">Shop Address</h5>
-                    <p class="text-base font-semibold text-gray-800">Main National Highway Jamal e Ibrahim Society Quaidabad Karachi</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-950 text-gray-400 py-6 text-center text-sm border-t border-blue-900">
-        <p>© 2026 Ahmed Refrigeration & Air Conditioning Center. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/923406886783?text=Salam%20Ahmed%20Center,%20mujhe%20service%20chahiye" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-50 flex items-center justify-center text-2xl">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- JavaScript Modal Logic -->
-    <script>
-        function openModal(title, imgSrc, desc) {
-            document.getElementById('modalTitle').innerText = title;
-            document.getElementById('modalImg').src = imgSrc;
-            document.getElementById('modalDesc').innerText = desc;
-            document.getElementById('serviceModal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('serviceModal').classList.add('hidden');
-        }
-    </script>
-
-</body>
-</html>
+  <!-- Washing Machine Items -->
+  <div class="gallery-item washing">
+    <img src="images/washing1.jpg" alt="Washing Machine Repair">
+    <h3>Washing Machine Repair</h3>
+  </div>
+</div>

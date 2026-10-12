@@ -13,13 +13,13 @@
         .hero-bg {
             background: linear-gradient(135deg, #0b2545 0%, #134074 50%, #001219 100%);
         }
-        .icon-circle-btn {
+        .icon-circle {
             transition: all 0.3s ease;
         }
-        .icon-circle-btn:hover {
+        .icon-circle:hover {
             transform: translateY(-5px);
+            background-color: rgba(0, 168, 232, 0.2);
             border-color: #38bdf8;
-            box-shadow: 0 10px 20px -5px rgba(56, 189, 248, 0.4);
         }
     </style>
 </head>
@@ -55,10 +55,15 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Section -->
             <div class="flex items-center gap-3">
-                <img src="file_0000000001fb88211954be1ce012e8772.png" 
-                     alt="Ahmed Logo" 
-                     class="w-12 h-12 object-contain rounded-lg shadow-sm"
-                     onerror="this.src='https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png'">
+                <div class="w-12 h-12 relative flex-shrink-0">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <path d="M 20 80 L 50 20 L 80 80 Z" fill="none" stroke="#0284c7" stroke-width="12" stroke-linejoin="round"/>
+                        <path d="M 35 80 L 50 50 L 65 80 Z" fill="#0284c7"/>
+                        <path d="M 50 20 L 80 80" stroke="#ef4444" stroke-width="12" stroke-linecap="round"/>
+                        <circle cx="25" cy="45" r="10" fill="#0284c7"/>
+                        <path d="M 70 30 C 80 40 80 60 70 70" fill="none" stroke="#0284c7" stroke-width="6"/>
+                    </svg>
+                </div>
                 <div>
                     <h1 class="text-xl md:text-2xl font-black text-blue-950 tracking-tight leading-none">AHMED</h1>
                     <p class="text-xs font-bold text-blue-900 tracking-wider">REFRIGERATION &amp;</p>
@@ -85,11 +90,11 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (With Your Exact Original Layout & Your Personal Picture) -->
     <section id="home" class="hero-bg text-white py-12 md:py-16 relative overflow-hidden">
         <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            <!-- Left Column: Content & Circular Badges -->
+            <!-- Left Column: Content & 5 Circular Service Badges -->
             <div class="lg:col-span-7 space-y-6">
                 <div class="flex items-center gap-3">
                     <span class="text-cyan-400 font-semibold text-sm tracking-wide">Your Comfort Our Priority</span>
@@ -101,45 +106,45 @@
                     <span class="text-cyan-400">Air Conditioning</span> Center
                 </h1>
 
-                <p class="text-gray-300 text-base md:text-lg max-w-xl">
+                <p class="text-gray-200 text-base md:text-lg max-w-xl">
                     Expert HVAC Repairing, Sale, Purchase and Services
                 </p>
 
-                <!-- Circular Icon Badges -->
-                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 pt-4">
+                <!-- 5 Circular Icon Badges (Same as Original Design) -->
+                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 pt-2">
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/40 bg-blue-900/60 flex items-center justify-center text-cyan-400 text-xl icon-circle-btn mb-2">
+                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
-                        <span class="text-xs font-medium text-gray-200">AC Repairing &amp; Service</span>
+                        <span class="text-[11px] font-medium text-gray-200 leading-tight">AC Repairing &amp; Service</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/40 bg-blue-900/60 flex items-center justify-center text-cyan-400 text-xl icon-circle-btn mb-2">
+                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
                             <i class="fa-solid fa-box"></i>
                         </div>
-                        <span class="text-xs font-medium text-gray-200">Split / Cassette AC</span>
+                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Split / Cassette AC</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/40 bg-blue-900/60 flex items-center justify-center text-cyan-400 text-xl icon-circle-btn mb-2">
+                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
                             <i class="fa-solid fa-building"></i>
                         </div>
-                        <span class="text-xs font-medium text-gray-200">Commercial AC</span>
+                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Commercial AC</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/40 bg-blue-900/60 flex items-center justify-center text-cyan-400 text-xl icon-circle-btn mb-2">
+                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
                             <i class="fa-solid fa-snowflake"></i>
                         </div>
-                        <span class="text-xs font-medium text-gray-200">Refrigeration Service</span>
+                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Refrigeration Service</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/40 bg-blue-900/60 flex items-center justify-center text-cyan-400 text-xl icon-circle-btn mb-2">
+                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <span class="text-xs font-medium text-gray-200">Sale &amp; Purchase (Used &amp; New)</span>
+                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Sale &amp; Purchase (Used &amp; New)</span>
                     </div>
                 </div>
 
@@ -149,26 +154,29 @@
                         <i class="fa-solid fa-phone"></i>
                         Call Now 0340-6886783
                     </a>
-                    <a href="#services" class="border-2 border-white/80 hover:bg-white hover:text-blue-950 text-white font-bold py-3.5 px-6 rounded-lg transition flex items-center gap-2">
+                    <a href="#services" class="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-blue-950 font-bold py-3.5 px-6 rounded-lg transition flex items-center gap-2">
                         Our Services <i class="fa-solid fa-chevron-right text-xs"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Right Column: Personal Photo Banner Image -->
+            <!-- Right Column: Your Personal Picture Added Here -->
             <div class="lg:col-span-5 flex justify-center items-center">
-                <div class="relative w-full max-w-md rounded-2xl overflow-hidden border-4 border-cyan-400/40 shadow-2xl bg-blue-950">
+                <div class="relative w-full max-w-sm rounded-2xl overflow-hidden border-4 border-cyan-400/60 shadow-2xl bg-blue-950">
                     <img src="file_0000000001fb88211954be1ce012e8772.png" 
                          alt="Ahmed Refrigeration Owner Picture" 
                          class="w-full h-auto object-cover hover:scale-105 transition duration-500"
                          onerror="this.src='https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png'">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-950 via-blue-950/80 to-transparent p-3 text-center">
+                        <p class="text-[11px] uppercase font-bold text-cyan-400 tracking-wider">Your Comfort Our Priority</p>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Services Overview Grid (5 Columns) -->
+    <!-- Services Overview Grid (5 Columns - Exact Original Design) -->
     <section id="services" class="py-12 bg-white border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
@@ -278,4 +286,4 @@
     </footer>
 
 </body>
-    </html>
+</html>

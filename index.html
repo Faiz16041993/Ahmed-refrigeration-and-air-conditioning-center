@@ -15,10 +15,11 @@
         }
         .icon-circle {
             transition: all 0.3s ease;
+            cursor: pointer;
         }
         .icon-circle:hover {
             transform: translateY(-5px);
-            background-color: rgba(0, 168, 232, 0.2);
+            background-color: rgba(0, 168, 232, 0.3);
             border-color: #38bdf8;
         }
     </style>
@@ -78,7 +79,6 @@
                 <a href="#about" class="hover:text-blue-600 transition">About Us</a>
                 <a href="#services" class="hover:text-blue-600 transition">Services</a>
                 <a href="#products" class="hover:text-blue-600 transition">Products</a>
-                <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
             </nav>
 
@@ -120,42 +120,50 @@
                     </a>
                 </div>
 
-                <!-- 5 Circular Icon Badges -->
-                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 pt-2">
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
+                <!-- 5 Interactive Clickable Circular Badges -->
+                <p class="text-xs text-cyan-300 font-semibold pt-2 text-center lg:text-left">👇 Click any icon below to view photo:</p>
+                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3">
+                    
+                    <!-- 1. AC Repairing (Opens Original Photo) -->
+                    <div onclick="openModal('AC Repairing & Service', 'https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png')" class="flex flex-col items-center text-center cursor-pointer group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/60 bg-blue-900/90 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow-lg group-hover:bg-cyan-500 group-hover:text-blue-950 transition">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
-                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">AC Repairing &amp; Service</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight group-hover:text-cyan-300">AC Repairing &amp; Service</span>
                     </div>
 
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
+                    <!-- 2. Split / Cassette AC -->
+                    <div onclick="openModal('Split & Cassette AC Systems', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80')" class="flex flex-col items-center text-center cursor-pointer group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/60 bg-blue-900/90 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow-lg group-hover:bg-cyan-500 group-hover:text-blue-950 transition">
                             <i class="fa-solid fa-box"></i>
                         </div>
-                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Split / Cassette AC</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight group-hover:text-cyan-300">Split / Cassette AC</span>
                     </div>
 
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
+                    <!-- 3. Commercial AC / HVAC -->
+                    <div onclick="openModal('Commercial AC & HVAC Plants', 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80')" class="flex flex-col items-center text-center cursor-pointer group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/60 bg-blue-900/90 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow-lg group-hover:bg-cyan-500 group-hover:text-blue-950 transition">
                             <i class="fa-solid fa-building"></i>
                         </div>
-                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Commercial AC</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight group-hover:text-cyan-300">Commercial AC</span>
                     </div>
 
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
+                    <!-- 4. Refrigeration & Refrigerator Service -->
+                    <div onclick="openModal('Refrigerator & Commercial Cooling Service', 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=800&q=80')" class="flex flex-col items-center text-center cursor-pointer group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/60 bg-blue-900/90 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow-lg group-hover:bg-cyan-500 group-hover:text-blue-950 transition">
                             <i class="fa-solid fa-snowflake"></i>
                         </div>
-                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Refrigeration Service</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight group-hover:text-cyan-300">Refrigeration Service</span>
                     </div>
 
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
+                    <!-- 5. Sale & Purchase -->
+                    <div onclick="openModal('Sale & Purchase of Used & New Units', 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80')" class="flex flex-col items-center text-center cursor-pointer group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/60 bg-blue-900/90 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow-lg group-hover:bg-cyan-500 group-hover:text-blue-950 transition">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Sale &amp; Purchase (Used &amp; New)</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight group-hover:text-cyan-300">Sale &amp; Purchase</span>
                     </div>
+
                 </div>
 
                 <!-- Action Buttons -->
@@ -170,7 +178,7 @@
                 </div>
             </div>
 
-            <!-- Right Side: Owner's Personal Picture Card -->
+            <!-- Right Side Main Owner Card -->
             <div class="lg:col-span-5 flex justify-center">
                 <div class="relative w-full max-w-xs rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-400 bg-blue-950">
                     <img src="https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png" 
@@ -186,50 +194,88 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section with Individual Specific Photos -->
     <section id="services" class="py-16 bg-white border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <h2 class="text-3xl font-extrabold text-blue-950 uppercase tracking-wide">Services &amp; Solutions</h2>
                 <div class="h-1 w-20 bg-cyan-500 mx-auto mt-2 rounded-full"></div>
-                <p class="text-gray-600 text-sm mt-3">We provide top-notch HVAC and cooling solutions tailored for your residential and commercial needs.</p>
+                <p class="text-gray-600 text-sm mt-3">High-quality services provided for all cooling and HVAC requirements in Karachi.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-                <div class="p-6 text-center rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-cyan-400 transition bg-white group">
-                    <div class="text-blue-600 text-4xl mb-3 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-snowflake"></i></div>
-                    <h3 class="font-bold text-gray-900 mb-2 text-base">AC Repairing &amp; Service</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">All types of split, window, package and central AC service and repair.</p>
+                <!-- Card 1: AC Repairing & Owner Banner -->
+                <div class="rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-xl transition bg-white group">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png" alt="AC Repairing Service" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">Primary Service</span>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-gray-900 mb-1.5 text-base">AC Repairing &amp; Service</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-4">Complete repairing, gas refill, and master servicing for Split, Window &amp; Inverter ACs.</p>
+                        <button onclick="openModal('AC Repairing & Service', 'https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png')" class="text-xs font-bold text-blue-600 hover:text-cyan-600">View Full Photo <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                    </div>
                 </div>
 
-                <div class="p-6 text-center rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-cyan-400 transition bg-white group">
-                    <div class="text-blue-600 text-4xl mb-3 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-gear"></i></div>
-                    <h3 class="font-bold text-gray-900 mb-2 text-base">Installation</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">Professional installation of residential and commercial AC systems.</p>
+                <!-- Card 2: Refrigerator / Fridge Repairing -->
+                <div class="rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-xl transition bg-white group">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=800&q=80" alt="Refrigerator Repairing" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Fridge Work</span>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-gray-900 mb-1.5 text-base">Refrigeration &amp; Fridge Repair</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-4">Expert repairs for home refrigerators, deep freezers, chillers and display counters.</p>
+                        <button onclick="openModal('Refrigerator & Commercial Cooling Service', 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=800&q=80')" class="text-xs font-bold text-blue-600 hover:text-cyan-600">View Full Photo <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                    </div>
                 </div>
 
-                <div class="p-6 text-center rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-cyan-400 transition bg-white group">
-                    <div class="text-blue-600 text-4xl mb-3 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-temperature-arrow-down"></i></div>
-                    <h3 class="font-bold text-gray-900 mb-2 text-base">Refrigeration Service</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">Chillers, cold rooms, display counters and all refrigeration work.</p>
+                <!-- Card 3: Cassette & Split AC Installation -->
+                <div class="rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-xl transition bg-white group">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Split & Cassette AC" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] font-bold px-2 py-1 rounded">Cassette / Split</span>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-gray-900 mb-1.5 text-base">Split &amp; Cassette AC Fitting</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-4">Neat copper piping, ceiling cassette AC mounting, and indoor/outdoor installation.</p>
+                        <button onclick="openModal('Split & Cassette AC Systems', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80')" class="text-xs font-bold text-blue-600 hover:text-cyan-600">View Full Photo <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                    </div>
                 </div>
 
-                <div class="p-6 text-center rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-cyan-400 transition bg-white group">
-                    <div class="text-blue-600 text-4xl mb-3 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-cart-shopping"></i></div>
-                    <h3 class="font-bold text-gray-900 mb-2 text-base">Sale &amp; Purchase</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">New and used AC units, refrigeration equipment and spare parts.</p>
-                </div>
-
-                <div class="p-6 text-center rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-cyan-400 transition bg-white group">
-                    <div class="text-blue-600 text-4xl mb-3 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-wrench"></i></div>
-                    <h3 class="font-bold text-gray-900 mb-2 text-base">Maintenance</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">Regular maintenance for better performance and longer life.</p>
+                <!-- Card 4: HVAC & Commercial Cooling -->
+                <div class="rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-xl transition bg-white group">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="HVAC Commercial Plants" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-1 rounded">HVAC Commercial</span>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h3 class="font-bold text-gray-900 mb-1.5 text-base">Commercial HVAC Systems</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-4">Heavy-duty commercial AC plant servicing, duct work, and maintenance contracts.</p>
+                        <button onclick="openModal('Commercial AC & HVAC Plants', 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80')" class="text-xs font-bold text-blue-600 hover:text-cyan-600">View Full Photo <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <!-- Interactive Photo Modal (Pop-up Window) -->
+    <div id="imageModal" class="fixed inset-0 bg-black/80 z-[100] hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl relative animate-fade-in">
+            <div class="bg-blue-950 text-white px-4 py-3 flex justify-between items-center">
+                <h3 id="modalTitle" class="font-bold text-sm text-cyan-400">Service Photo</h3>
+                <button onclick="closeModal()" class="text-gray-300 hover:text-white text-xl font-bold">&times;</button>
+            </div>
+            <div class="p-3 bg-gray-900 flex justify-center items-center">
+                <img id="modalImage" src="" alt="Service Detail Photo" class="max-h-[70vh] w-auto rounded-lg object-contain">
+            </div>
+            <div class="p-3 bg-gray-100 text-center">
+                <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-5 py-2 rounded-lg">Close View</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/923406886783" target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition">
@@ -247,6 +293,26 @@
             <p class="text-gray-500 pt-2">© 2026 All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript Pop-up Modal Controls -->
+    <script>
+        function openModal(title, imageSrc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+
+        // Close modal when clicking outside content area
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
 
 </body>
 </html>

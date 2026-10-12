@@ -11,8 +11,8 @@
     <style>
         html { scroll-behavior: smooth; }
         .hero-banner {
-            background: linear-gradient(135deg, rgba(11, 37, 69, 0.95) 0%, rgba(19, 64, 116, 0.9) 50%, rgba(0, 18, 25, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80');
+            background: linear-gradient(135deg, rgba(11, 37, 69, 0.92) 0%, rgba(19, 64, 116, 0.88) 50%, rgba(0, 18, 25, 0.92) 100%), 
+                        url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -29,21 +29,21 @@
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- Top Bar -->
-    <div class="bg-[#031b33] text-gray-200 text-xs py-2.5 px-4 border-b border-blue-900/50">
+    <div class="bg-[#031b33] text-gray-200 text-xs py-2 px-4 border-b border-blue-900/50">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex flex-wrap items-center gap-6 justify-center md:justify-start">
-                <a href="tel:+923406886783" class="flex items-center gap-2 hover:text-cyan-400 transition">
+            <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
+                <a href="tel:+923406886783" class="flex items-center gap-1.5 hover:text-cyan-400 transition">
                     <i class="fa-solid fa-phone text-cyan-400"></i>
                     <span>0340-6886783</span>
                 </a>
-                <a href="mailto:faizbinhussain@gmail.com" class="flex items-center gap-2 hover:text-cyan-400 transition">
+                <a href="mailto:faizbinhussain@gmail.com" class="flex items-center gap-1.5 hover:text-cyan-400 transition">
                     <i class="fa-solid fa-envelope text-cyan-400"></i>
                     <span>faizbinhussain@gmail.com</span>
                 </a>
-                <a href="https://faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/" target="_blank" class="flex items-center gap-2 hover:text-cyan-400 transition">
-                    <i class="fa-solid fa-globe text-cyan-400"></i>
-                    <span>faiz16041993.github.io</span>
-                </a>
+                <div class="flex items-center gap-1.5 text-center md:text-left">
+                    <i class="fa-solid fa-location-dot text-cyan-400"></i>
+                    <span>Main National Highway Jamal e Ibrahim Society Quaidabad Karachi</span>
+                </div>
             </div>
             <div class="flex items-center gap-4 text-sm">
                 <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <!-- Main Navigation Header -->
+    <!-- Main Navigation Header with Full Menu -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Section -->
@@ -68,19 +68,19 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-lg md:text-xl font-black text-blue-950 tracking-tight leading-none">AHMED</h1>
-                    <p class="text-[9px] md:text-[11px] font-bold text-blue-900 tracking-wider">REFRIGERATION &amp;</p>
-                    <p class="text-[9px] md:text-[11px] font-bold text-cyan-600 tracking-wider">AIR CONDITIONING CENTER</p>
+                    <h1 class="text-base md:text-xl font-black text-blue-950 tracking-tight leading-none">AHMED</h1>
+                    <p class="text-[9px] md:text-[10px] font-bold text-blue-900 tracking-wider">REFRIGERATION &amp;</p>
+                    <p class="text-[9px] md:text-[10px] font-bold text-cyan-600 tracking-wider">AIR CONDITIONING CENTER</p>
                     <p class="text-[8px] text-gray-500 font-medium hidden sm:block">HVAC Repairing Sale Purchase and Services</p>
                 </div>
             </div>
 
-            <!-- Desktop Nav Links -->
+            <!-- Navigation Links -->
             <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700">
                 <a href="#home" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a>
                 <a href="#about" class="hover:text-blue-600 transition">About Us</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                <a href="#products" class="hover:text-blue-600 transition">Products</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services <i class="fa-solid fa-angle-down text-xs"></i></a>
+                <a href="#products" class="hover:text-blue-600 transition">Products <i class="fa-solid fa-angle-down text-xs"></i></a>
                 <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
             </nav>
@@ -93,7 +93,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section matching the exact requested style -->
     <section id="home" class="hero-banner text-white py-12 lg:py-20 relative overflow-hidden">
         <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
@@ -113,8 +113,18 @@
                     Expert HVAC Repairing, Sale, Purchase and Services with professional excellence.
                 </p>
 
+                <!-- Searchable Website Address Box for Users -->
+                <div class="bg-blue-950/80 border border-cyan-500/40 rounded-xl p-3.5 max-w-md mx-auto lg:mx-0 text-left shadow-lg">
+                    <p class="text-[11px] text-cyan-300 font-semibold mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-globe"></i> Official Website Search Link:
+                    </p>
+                    <a href="https://faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/" target="_blank" class="text-xs text-white underline hover:text-cyan-400 break-all font-mono">
+                        https://faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/
+                    </a>
+                </div>
+
                 <!-- 5 Circular Icon Badges -->
-                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 pt-4">
+                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 pt-2">
                     <div class="flex flex-col items-center text-center">
                         <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -163,15 +173,14 @@
                 </div>
             </div>
 
-            <!-- Right Side Personal Photo Showcase -->
-            <div class="lg:col-span-5 flex justify-center relative">
-                <div class="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-400 bg-blue-950">
-                    <img src="https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png" 
-                         alt="Ahmed Refrigeration Center Owner" 
-                         class="w-full h-auto object-cover block"
-                         onerror="this.src='./file_0000000001fb88211954be1ce012e8772.png'">
-                    <div class="absolute bottom-2 right-2 bg-blue-950/90 text-cyan-300 px-3 py-1 rounded-lg text-xs font-bold border border-cyan-500/30">
-                        Faiz Bin Hussain ❄️
+            <!-- Right Side Professional HVAC Showcase Image -->
+            <div class="lg:col-span-5 hidden lg:block relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-400/40 bg-blue-950">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" 
+                         alt="AC and Refrigeration Equipment" 
+                         class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 right-3 bg-blue-900/90 text-cyan-300 px-3 py-1.5 rounded-lg text-xs font-bold border border-cyan-500/30">
+                        Cool Air Better Life ❄️
                     </div>
                 </div>
             </div>
@@ -179,7 +188,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Detailed Services Section -->
     <section id="services" class="py-16 bg-white border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-12">
@@ -234,10 +243,12 @@
         <div class="container mx-auto px-4 space-y-2">
             <h3 class="text-white text-sm font-bold tracking-wider uppercase">Ahmed Refrigeration &amp; Air Conditioning Center</h3>
             <p>Main National Highway Jamal e Ibrahim Society Quaidabad Karachi | Contact: 0340-6886783</p>
-            <p class="text-cyan-400 font-semibold"><a href="https://faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/" target="_blank" class="underline">faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/</a></p>
+            <p class="text-cyan-400 font-semibold">
+                Website Link: <a href="https://faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/" target="_blank" class="underline">https://faiz16041993.github.io/Ahmed-refrigeration-and-air-conditioning-center/</a>
+            </p>
             <p class="text-gray-500 pt-2">© 2026 All Rights Reserved.</p>
         </div>
     </footer>
 
 </body>
-                    </html>
+</html>

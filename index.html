@@ -28,16 +28,16 @@
     <!-- Top Bar -->
     <div class="bg-[#031b33] text-gray-200 text-xs py-2 px-4 border-b border-blue-900/50">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex flex-wrap items-center gap-6 justify-center md:justify-start">
-                <a href="tel:+923406886783" class="flex items-center gap-2 hover:text-cyan-400 transition">
+            <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
+                <a href="tel:+923406886783" class="flex items-center gap-1.5 hover:text-cyan-400 transition">
                     <i class="fa-solid fa-phone text-cyan-400"></i>
                     <span>0340-6886783</span>
                 </a>
-                <a href="mailto:faizbinhussain@gmail.com" class="flex items-center gap-2 hover:text-cyan-400 transition">
+                <a href="mailto:faizbinhussain@gmail.com" class="flex items-center gap-1.5 hover:text-cyan-400 transition">
                     <i class="fa-solid fa-envelope text-cyan-400"></i>
                     <span>faizbinhussain@gmail.com</span>
                 </a>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-1.5 text-center md:text-left">
                     <i class="fa-solid fa-location-dot text-cyan-400"></i>
                     <span>Main National Highway Jamal e Ibrahim Society Quaidabad Karachi</span>
                 </div>
@@ -55,7 +55,7 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Section -->
             <div class="flex items-center gap-3">
-                <div class="w-12 h-12 relative flex-shrink-0">
+                <div class="w-10 h-10 md:w-12 md:h-12 relative flex-shrink-0">
                     <svg viewBox="0 0 100 100" class="w-full h-full">
                         <path d="M 20 80 L 50 20 L 80 80 Z" fill="none" stroke="#0284c7" stroke-width="12" stroke-linejoin="round"/>
                         <path d="M 35 80 L 50 50 L 65 80 Z" fill="#0284c7"/>
@@ -65,215 +65,146 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-xl md:text-2xl font-black text-blue-950 tracking-tight leading-none">AHMED</h1>
-                    <p class="text-xs font-bold text-blue-900 tracking-wider">REFRIGERATION &amp;</p>
-                    <p class="text-xs font-bold text-cyan-600 tracking-wider">AIR CONDITIONING CENTER</p>
-                    <p class="text-[10px] text-gray-500 font-medium">HVAC Repairing Sale Purchase and Services</p>
+                    <h1 class="text-lg md:text-2xl font-black text-blue-950 tracking-tight leading-none">AHMED</h1>
+                    <p class="text-[10px] md:text-xs font-bold text-blue-900 tracking-wider">REFRIGERATION &amp;</p>
+                    <p class="text-[10px] md:text-xs font-bold text-cyan-600 tracking-wider">AIR CONDITIONING CENTER</p>
+                    <p class="text-[9px] text-gray-500 font-medium hidden sm:block">HVAC Repairing Sale Purchase and Services</p>
                 </div>
             </div>
 
-            <!-- Nav Links -->
-            <nav class="hidden lg:flex items-center gap-6 font-semibold text-gray-700 text-sm">
-                <a href="#home" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a>
-                <a href="#about" class="hover:text-blue-600 transition">About Us</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
-                <a href="#products" class="hover:text-blue-600 transition">Products <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
-                <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
-            </nav>
-
             <!-- Call CTA Button -->
-            <a href="tel:+923406886783" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg flex items-center gap-2 text-sm shadow-md transition">
+            <a href="tel:+923406886783" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2 text-xs md:text-sm shadow-md transition">
                 <i class="fa-solid fa-phone-flip"></i>
                 <span>Get a Quote</span>
             </a>
         </div>
     </header>
 
-    <!-- Hero Section (With Your Exact Original Layout & Your Personal Picture) -->
-    <section id="home" class="hero-bg text-white py-12 md:py-16 relative overflow-hidden">
-        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <!-- Hero Section (Mobile Optimized & Guaranteed Pic Display) -->
+    <section id="home" class="hero-bg text-white py-8 md:py-16 relative overflow-hidden">
+        <div class="container mx-auto px-4 flex flex-col lg:grid lg:grid-cols-12 gap-8 items-center">
             
-            <!-- Left Column: Content & 5 Circular Service Badges -->
-            <div class="lg:col-span-7 space-y-6">
-                <div class="flex items-center gap-3">
-                    <span class="text-cyan-400 font-semibold text-sm tracking-wide">Your Comfort Our Priority</span>
-                    <div class="h-[2px] w-16 bg-cyan-400/60"></div>
+            <!-- Left Column: Heading & Text -->
+            <div class="w-full lg:col-span-7 space-y-4 text-center lg:text-left">
+                <div class="flex items-center justify-center lg:justify-start gap-3">
+                    <span class="text-cyan-400 font-semibold text-xs md:text-sm tracking-wide">YOUR COMFORT OUR PRIORITY</span>
+                    <div class="h-[2px] w-12 bg-cyan-400/60 hidden sm:block"></div>
                 </div>
 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+                <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
                     Ahmed Refrigeration &amp;<br>
                     <span class="text-cyan-400">Air Conditioning</span> Center
                 </h1>
 
-                <p class="text-gray-200 text-base md:text-lg max-w-xl">
+                <p class="text-gray-200 text-sm md:text-lg max-w-xl mx-auto lg:mx-0">
                     Expert HVAC Repairing, Sale, Purchase and Services
                 </p>
 
-                <!-- 5 Circular Icon Badges (Same as Original Design) -->
+                <!-- Personal Image Box (Mobile par Pehle Dikhne ke liye) -->
+                <div class="my-6 flex justify-center w-full">
+                    <div class="relative w-full max-w-sm rounded-2xl overflow-hidden border-4 border-cyan-400 shadow-2xl bg-blue-950">
+                        <img src="file_0000000001fb88211954be1ce012e8772.png" 
+                             alt="Ahmed Refrigeration Center" 
+                             class="w-full h-auto object-cover block"
+                             onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png';">
+                    </div>
+                </div>
+
+                <!-- 5 Circular Icon Badges -->
                 <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 pt-2">
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-gray-200 leading-tight">AC Repairing &amp; Service</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">AC Repairing &amp; Service</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
                             <i class="fa-solid fa-box"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Split / Cassette AC</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Split / Cassette AC</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
                             <i class="fa-solid fa-building"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Commercial AC</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Commercial AC</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
                             <i class="fa-solid fa-snowflake"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Refrigeration Service</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Refrigeration Service</span>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <div class="w-14 h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-xl icon-circle mb-2 shadow">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-400/50 bg-blue-900/80 flex items-center justify-center text-cyan-400 text-lg sm:text-xl icon-circle mb-1.5 shadow">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-gray-200 leading-tight">Sale &amp; Purchase (Used &amp; New)</span>
+                        <span class="text-[10px] sm:text-xs font-medium text-gray-200 leading-tight">Sale &amp; Purchase (Used &amp; New)</span>
                     </div>
                 </div>
 
                 <!-- Action Buttons -->
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="tel:+923406886783" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 px-6 rounded-lg shadow-lg flex items-center gap-3 transition">
+                <div class="flex flex-col sm:flex-row gap-3 pt-4 justify-center lg:justify-start">
+                    <a href="tel:+923406886783" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg flex items-center justify-center gap-2 transition text-sm">
                         <i class="fa-solid fa-phone"></i>
                         Call Now 0340-6886783
                     </a>
-                    <a href="#services" class="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-blue-950 font-bold py-3.5 px-6 rounded-lg transition flex items-center gap-2">
+                    <a href="#services" class="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-blue-950 font-bold py-3 px-6 rounded-xl transition flex items-center justify-center gap-2 text-sm">
                         Our Services <i class="fa-solid fa-chevron-right text-xs"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Right Column: Your Personal Picture Added Here -->
-            <div class="lg:col-span-5 flex justify-center items-center">
-                <div class="relative w-full max-w-sm rounded-2xl overflow-hidden border-4 border-cyan-400/60 shadow-2xl bg-blue-950">
-                    <img src="file_0000000001fb88211954be1ce012e8772.png" 
-                         alt="Ahmed Refrigeration Owner Picture" 
-                         class="w-full h-auto object-cover hover:scale-105 transition duration-500"
-                         onerror="this.src='https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png'">
-                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-950 via-blue-950/80 to-transparent p-3 text-center">
-                        <p class="text-[11px] uppercase font-bold text-cyan-400 tracking-wider">Your Comfort Our Priority</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Services Overview Grid (5 Columns - Exact Original Design) -->
+    <!-- Services Section -->
     <section id="services" class="py-12 bg-white border-b border-gray-200">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+            <h2 class="text-2xl font-extrabold text-center text-blue-950 mb-8 uppercase tracking-wide">Services &amp; Solutions</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 
-                <!-- Service 1 -->
-                <div class="pt-4 sm:pt-0 sm:px-4 text-center flex flex-col items-center">
-                    <div class="text-blue-600 text-3xl mb-3">
-                        <i class="fa-solid fa-snowflake"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">AC Repairing &amp; Service</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        All types of split, window, package and central AC service and repair.
-                    </p>
+                <div class="p-4 text-center rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-2"><i class="fa-solid fa-snowflake"></i></div>
+                    <h3 class="font-bold text-gray-900 mb-1 text-sm">AC Repairing &amp; Service</h3>
+                    <p class="text-xs text-gray-600">All types of split, window, package and central AC service and repair.</p>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="pt-4 sm:pt-0 sm:px-4 text-center flex flex-col items-center">
-                    <div class="text-blue-600 text-3xl mb-3">
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Installation</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        Professional installation of residential and commercial AC systems.
-                    </p>
+                <div class="p-4 text-center rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-2"><i class="fa-solid fa-gear"></i></div>
+                    <h3 class="font-bold text-gray-900 mb-1 text-sm">Installation</h3>
+                    <p class="text-xs text-gray-600">Professional installation of residential and commercial AC systems.</p>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="pt-4 sm:pt-0 sm:px-4 text-center flex flex-col items-center">
-                    <div class="text-blue-600 text-3xl mb-3">
-                        <i class="fa-solid fa-temperature-arrow-down"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Refrigeration Service</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        Chillers, cold rooms, display counters and all refrigeration work.
-                    </p>
+                <div class="p-4 text-center rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-2"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+                    <h3 class="font-bold text-gray-900 mb-1 text-sm">Refrigeration Service</h3>
+                    <p class="text-xs text-gray-600">Chillers, cold rooms, display counters and all refrigeration work.</p>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="pt-4 sm:pt-0 sm:px-4 text-center flex flex-col items-center">
-                    <div class="text-blue-600 text-3xl mb-3">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Sale &amp; Purchase</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        New and used AC units, refrigeration equipment and spare parts.
-                    </p>
+                <div class="p-4 text-center rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-2"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3 class="font-bold text-gray-900 mb-1 text-sm">Sale &amp; Purchase</h3>
+                    <p class="text-xs text-gray-600">New and used AC units, refrigeration equipment and spare parts.</p>
                 </div>
 
-                <!-- Service 5 -->
-                <div class="pt-4 sm:pt-0 sm:px-4 text-center flex flex-col items-center">
-                    <div class="text-blue-600 text-3xl mb-3">
-                        <i class="fa-solid fa-wrench"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Maintenance</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        Regular maintenance for better performance and longer life.
-                    </p>
+                <div class="p-4 text-center rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-2"><i class="fa-solid fa-wrench"></i></div>
+                    <h3 class="font-bold text-gray-900 mb-1 text-sm">Maintenance</h3>
+                    <p class="text-xs text-gray-600">Regular maintenance for better performance and longer life.</p>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="about" class="py-16 bg-gradient-to-br from-blue-900 to-blue-950 text-white">
-        <div class="container mx-auto px-4 text-center max-w-3xl">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-                Why Choose <span class="text-cyan-400">Us?</span>
-            </h2>
-            <p class="text-gray-300 text-sm md:text-base mb-8">
-                Hum aap ko Karachi mein HVAC aur Refrigeration ki behtareen aur reliable services provide karte hain. Expert technicians aur guaranteed kaam hamari pehchan hai.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                <div class="bg-white/10 backdrop-blur p-5 rounded-xl border border-white/10">
-                    <i class="fa-solid fa-user-gear text-cyan-400 text-2xl mb-2"></i>
-                    <h4 class="font-bold text-base mb-1">Expert Technicians</h4>
-                    <p class="text-xs text-gray-300">Experienced team for all split &amp; commercial HVAC units.</p>
-                </div>
-
-                <div class="bg-white/10 backdrop-blur p-5 rounded-xl border border-white/10">
-                    <i class="fa-solid fa-clock text-cyan-400 text-2xl mb-2"></i>
-                    <h4 class="font-bold text-base mb-1">Quick Response</h4>
-                    <p class="text-xs text-gray-300">Fast home delivery and repair service across Quaidabad Karachi.</p>
-                </div>
-
-                <div class="bg-white/10 backdrop-blur p-5 rounded-xl border border-white/10">
-                    <i class="fa-solid fa-handshake-angle text-cyan-400 text-2xl mb-2"></i>
-                    <h4 class="font-bold text-base mb-1">Affordable Rates</h4>
-                    <p class="text-xs text-gray-300">Fair pricing for repair, gas refilling, sale and purchase.</p>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/923406886783" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition transform hover:scale-110">
+    <a href="https://wa.me/923406886783" target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -281,7 +212,7 @@
     <footer class="bg-[#020e1a] text-gray-400 py-6 text-xs text-center border-t border-gray-800">
         <div class="container mx-auto px-4">
             <p>© 2026 Ahmed Refrigeration &amp; Air Conditioning Center. All Rights Reserved.</p>
-            <p class="mt-1 text-gray-500">Address: Main National Highway Jamal e Ibrahim Society Quaidabad Karachi | Phone: 0340-6886783</p>
+            <p class="mt-1 text-gray-500">Main National Highway Jamal e Ibrahim Society Quaidabad Karachi | 0340-6886783</p>
         </div>
     </footer>
 

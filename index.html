@@ -11,10 +11,7 @@
     <style>
         html { scroll-behavior: smooth; }
         .hero-banner {
-            background: linear-gradient(135deg, rgba(11, 37, 69, 0.92) 0%, rgba(19, 64, 116, 0.88) 50%, rgba(0, 18, 25, 0.92) 100%), 
-                        url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(135deg, #0b2545 0%, #134074 50%, #001219 100%);
         }
         .icon-circle {
             transition: all 0.3s ease;
@@ -53,7 +50,7 @@
         </div>
     </div>
 
-    <!-- Main Navigation Header with Full Menu -->
+    <!-- Main Navigation Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Section -->
@@ -79,8 +76,8 @@
             <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700">
                 <a href="#home" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a>
                 <a href="#about" class="hover:text-blue-600 transition">About Us</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services <i class="fa-solid fa-angle-down text-xs"></i></a>
-                <a href="#products" class="hover:text-blue-600 transition">Products <i class="fa-solid fa-angle-down text-xs"></i></a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#products" class="hover:text-blue-600 transition">Products</a>
                 <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
             </nav>
@@ -93,12 +90,12 @@
         </div>
     </header>
 
-    <!-- Hero Section matching the exact requested style -->
-    <section id="home" class="hero-banner text-white py-12 lg:py-20 relative overflow-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="hero-banner text-white py-12 lg:py-16 relative overflow-hidden">
         <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <!-- Left Text Content -->
-            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
                 <div class="flex items-center justify-center lg:justify-start gap-3">
                     <span class="text-cyan-400 font-semibold text-xs md:text-sm tracking-widest uppercase">Your Comfort Our Priority</span>
                     <div class="h-[2px] w-12 bg-cyan-400/60 hidden sm:block"></div>
@@ -109,12 +106,12 @@
                     <span class="text-cyan-400">Air Conditioning</span> Center
                 </h1>
 
-                <p class="text-gray-200 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium">
+                <p class="text-gray-200 text-sm md:text-base max-w-xl mx-auto lg:mx-0 font-medium">
                     Expert HVAC Repairing, Sale, Purchase and Services with professional excellence.
                 </p>
 
-                <!-- Searchable Website Address Box for Users -->
-                <div class="bg-blue-950/80 border border-cyan-500/40 rounded-xl p-3.5 max-w-md mx-auto lg:mx-0 text-left shadow-lg">
+                <!-- Searchable Website Address Box -->
+                <div class="bg-blue-950/90 border border-cyan-500/50 rounded-xl p-3.5 max-w-md mx-auto lg:mx-0 text-left shadow-lg">
                     <p class="text-[11px] text-cyan-300 font-semibold mb-1 flex items-center gap-1.5">
                         <i class="fa-solid fa-globe"></i> Official Website Search Link:
                     </p>
@@ -162,7 +159,7 @@
                 </div>
 
                 <!-- Action Buttons -->
-                <div class="flex flex-col sm:flex-row gap-3 pt-4 justify-center lg:justify-start">
+                <div class="flex flex-col sm:flex-row gap-3 pt-3 justify-center lg:justify-start">
                     <a href="tel:+923406886783" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg flex items-center justify-center gap-2 transition text-sm">
                         <i class="fa-solid fa-phone"></i>
                         Call Now 0340-6886783
@@ -173,14 +170,15 @@
                 </div>
             </div>
 
-            <!-- Right Side Professional HVAC Showcase Image -->
-            <div class="lg:col-span-5 hidden lg:block relative">
-                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-400/40 bg-blue-950">
-                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" 
-                         alt="AC and Refrigeration Equipment" 
-                         class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
-                    <div class="absolute bottom-3 right-3 bg-blue-900/90 text-cyan-300 px-3 py-1.5 rounded-lg text-xs font-bold border border-cyan-500/30">
-                        Cool Air Better Life ❄️
+            <!-- Right Side: Owner's Personal Picture Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-xs rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-400 bg-blue-950">
+                    <img src="https://raw.githubusercontent.com/Faiz16041993/Ahmed-refrigeration-and-air-conditioning-center/main/file_0000000001fb88211954be1ce012e8772.png" 
+                         alt="Faiz Bin Hussain - Ahmed Refrigeration Center" 
+                         class="w-full h-auto object-cover block"
+                         onerror="this.src='./file_0000000001fb88211954be1ce012e8772.png'">
+                    <div class="absolute bottom-2 right-2 left-2 bg-blue-950/95 text-cyan-300 py-1.5 px-3 rounded-lg text-xs font-bold text-center border border-cyan-500/40 shadow">
+                        ❄️ Faiz Bin Hussain (Owner)
                     </div>
                 </div>
             </div>
@@ -188,7 +186,7 @@
         </div>
     </section>
 
-    <!-- Detailed Services Section -->
+    <!-- Services Section -->
     <section id="services" class="py-16 bg-white border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-12">
